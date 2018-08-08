@@ -41,17 +41,16 @@ public class SortArray {
 
 		// Using Array to sort
 
-		int count = 0;
-		int val = 0;
-		int occurence = 0;
+		int[] newArray = new int[10];
 
-		for (int i = 0; i < myArray.length; i++) {
+		for (int item : myArray) {
+			newArray[item]++;
 
-			if (myArray[i] == val) {
-				count++;
-			}
-			val = i;
-			System.out.println("[" + val + "]:" + count);
+		}
+		for (int i = 0; i < newArray.length; i++) {
+			System.out.println(i);
+			System.out.println(newArray[i]);
+
 		}
 
 	}
